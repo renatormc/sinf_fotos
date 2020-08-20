@@ -7,17 +7,34 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-   <ImageView
-       android:id="@+id/imageView1"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_weight="1"/>
+    <!--    <RecyclerView-->
+    <!--        android:id="@+id/rcvPics"-->
+    <!--        android:scrollbars="vertical"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="1"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvwPics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+    />
+
 
     <Button
         android:id="@+id/btnButton1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="6"
-        android:text="Clicar"/>
+        android:text="Tirar foto" />
+
+    <Button
+        android:id="@+id/btnButton2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:text="QRCode" />
 
 </LinearLayout>
